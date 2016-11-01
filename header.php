@@ -36,7 +36,7 @@
 								<span class="icon-bar"></span>
 							</button>
 						</div>
-						<div class="pull-left logo margin-top-20">
+						<div class="pull-left logo margin-top-10">
 							<?php
 							if (get_theme_mod('site_logo') != '') : ?>
 								<a href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_mod('site_logo'); ?>" class="img-responsive" alt="" /></a>

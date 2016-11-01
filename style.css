@@ -1,11 +1,11 @@
 /*
-Theme Name: Yoga Responsive WooCommerce WordPress Theme
+Theme Name: Been Woman Fashion Store WooCommerce WordPress Responsive Theme
 Theme URI: http://themetim.com/
-Author: ThemeTim
+Author: themetim.com
 Author URI: http://themetim.com/
-Description: Yoga is responsive woocommerce integrated theme which is designed subtle and prevailing. Ideal for featuring yoga products and techniques. It has been optimized for best practice SEO with visual page builder integration.
+Description: Been is responsive woocommerce integrated theme which is designed subtle and prevailing. Ideal for featuring Been products and techniques. It has been optimized for best practice SEO with visual page builder integration.
 Version: 1.0
-Text Domain: themetim
+Text Domain: themetim.com
 Tags: fully customizable, visual page builder, mobile responsive, responsive, grid, bootstrap, custom menu, full width, custom sidebar, ecommerce, blog, modern design, featured image, custom background, news and promotions, social,woocommerce
 */
 
@@ -171,8 +171,6 @@ p,.textwidget,.woocommerce-Address address {
 }
 .header{
 	top: 0;
-	position: fixed;
-	width: 100%;
 	z-index: 10;
 }
 .sticky .header-top,.header, .header-top{
