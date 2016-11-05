@@ -67,10 +67,14 @@ function custom_add_product_description ($category) {
     $slug       =    $category->slug;
     $cat_url = get_term_link( $slug, 'product_cat' );
 
-    echo '<h4><a href='.$cat_url.'>'.$prod_term->name.'</a></h4>';
+    echo '<div class="category-inner text-center full-width">';
+    echo '<div class="category-title-p">';
+    echo '<h2 class="text-uppercase"><a href='.$cat_url.'>'.$prod_term->name.'</a></h2>';
     echo '<h5>'.$category->count.' Product</h5>';
     echo '<p>'.substr( $description,0,110 ).'</p>';
-    echo "<a href='$cat_url' class='btn btn-default text-uppercase'>See Category</a>";
+    echo '</div>';
+    echo "<a href='$cat_url' class='btn btn-default text-uppercase category-btn-fix'>See Category</a>";
+    echo "</div>";
 }
 
 /**

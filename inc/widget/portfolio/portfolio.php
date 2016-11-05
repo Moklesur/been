@@ -34,7 +34,7 @@ class Portfolio_Widget extends WP_Widget {
         $portfolio_slider_var = array( 'post_type' => 'portfolio','posts_per_page'	  => -1);
         $portfolio_query = new WP_Query( $portfolio_slider_var );
         ?>
-        <div class="portfolio row">
+        <div class="portfolio-widget">
             <div class="col-md-12">
                 <?php echo $title; ?>
             </div>
@@ -45,22 +45,18 @@ class Portfolio_Widget extends WP_Widget {
                     $text = get_post_meta( get_the_ID(), 'portfolio-text', true );
                     $link_title = get_post_meta( get_the_ID(), 'portfolio-link-title', true );
                     $link = get_post_meta( get_the_ID(), 'portfolio-link', true ); ?>
-                    <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+                    <div class="col-md-4 col-sm-4 col-xs-12 text-center padding-null position-relative overflow portfolio-cols">
                         <?php if ( has_post_thumbnail() ) { ?>
                             <div class="portfolio-thumb">
-                                <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-responsive center-block">
+                                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-responsive full-width"></a>
                             </div>
                         <?php } ?>
-                        <h4 class="text-uppercase "><?php the_title(); ?></h4>
-                        <?php if($heading != '') : ?>
-                            <h5 class="text-uppercase"><?php echo $heading;?></h5>
-                        <?php endif; ?>
-                        <?php if($text != ''): ?>
-                            <p><?php echo $text; ?></p>
-                        <?php endif; ?>
-                        <?php if($link != '' ||  $link_title != ''): ?>
-                            <a href="<?php echo $link;?>" class="btn btn-default text-uppercase"><?php echo $link_title;?></a>
-                        <?php endif; ?>
+                        <div class="portfolio-inner-widget full-width text-center">
+                            <a href="<?php the_permalink();?>" class="margin-bottom-20"><i class="fa fa-plus fa-2x"></i></a>
+                            <?php if($link != '' ||  $link_title != ''): ?>
+                                <a href="<?php echo $link;?>" class="btn btn-default text-uppercase"><?php echo $link_title;?></a>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>

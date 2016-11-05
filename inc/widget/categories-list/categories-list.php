@@ -36,7 +36,9 @@ class CategoriesList_Widget extends WP_Widget {
         $product_columns = apply_filters( 'widget_title', $instance['product_columns'] );
         ?>
         <div class="categories-list-widget default-widget <?php echo $carousel_class; ?>">
-            <?php echo $title ?>
+            <?php if ( ! empty( $instance['title'] ) ) {
+                echo $title;
+            }?>
             <?php echo do_shortcode('[product_categories number='.$product_limit.' columns='.$product_columns.']'); ?>
         </div>
         <script>

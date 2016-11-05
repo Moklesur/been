@@ -333,6 +333,35 @@ function themetim_customize_register( $wp_customize ) {
 		'section' => 'title_tagline',
 		'settings' => 'social_header_enable'
 	) );
+	$wp_customize->add_setting( 'top_header_tel_enable', array(
+		'default'           => '1',
+	) );
+	$wp_customize->add_control( 'top_header_tel_enable', array(
+		'label' => __( 'Enable Tel', 'text_domain' ),
+		'type' => 'checkbox',
+		'description'   => __('', 'text_domain'),
+		'section' => 'title_tagline',
+		'settings' => 'top_header_tel_enable'
+	) );
+
+	$wp_customize->add_setting( 'top_header_tel', array(
+		'default'           => '880 000 0000',
+	) );
+	$wp_customize->add_control( 'top_header_tel', array(
+		'label' => __( 'Phone Number', 'text_domain' ),
+		'type' => 'text',
+		'section' => 'title_tagline',
+		'settings' => 'top_header_tel'
+	) );
+	$wp_customize->add_setting( 'top_header_address', array(
+		'default'           => 'WEST 04ST STREET, SOHO, XN',
+	) );
+	$wp_customize->add_control( 'top_header_address', array(
+		'label' => __( 'Address', 'text_domain' ),
+		'type' => 'textarea',
+		'section' => 'title_tagline',
+		'settings' => 'top_header_address'
+	) );
 	$wp_customize->add_setting( 'top_header_account_enable', array(
 		'default'           => '1',
 	) );
@@ -1195,7 +1224,7 @@ function themetim_customize_register( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_control( new themetim_divider( $wp_customize, 'success', array(
-			'label' => __('Primary Button', 'themetidy'),
+			'label' => __('Success Button', 'themetidy'),
 			'section' => 'colors',
 			'settings' => 'themetim_options[divider]'
 		) )

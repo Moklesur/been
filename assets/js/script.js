@@ -9,16 +9,17 @@ jQuery(function(){
      *******************************************************************************/
     if (jQuery('.main-slider').length) {
         jQuery('.main-slider').camera({
-            height: '50%',
-            loader: 'bar',
+            height: '42%',
+            loader: 'pie',
+            pieDiameter: 50,
+            piePosition: 'rightTop',
             margin:'',
             alignment: 'center',
-            minHeight: '600px',
-            barPosition: 'top',
+            minHeight: '400px',
             thumbnails: true,
             playPause: false,
-            loaderColor: '#f9f9f9',
-            loaderBgColor: '#ddd',
+            loaderColor: '#f0123f',
+            loaderBgColor: '#000',
             hover: true,
             opacityOnGrid: false
         });
@@ -143,7 +144,7 @@ jQuery(function(){
             outClass: 'fade-out',
             inDuration: 1500,
             outDuration: 800,
-            linkElement: 'header a',
+            linkElement: '.navbar-collapse a',
             // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
             loading: true,
             loadingParentElement: 'body', //animsition wrapper element

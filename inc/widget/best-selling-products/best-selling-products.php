@@ -55,7 +55,27 @@ class BestSellingProducts_Widget extends WP_Widget {
                         items:1,
                         autoplay:true,
                         nav: true,
-                        navText: ["<a><i class='fa fa-angle-left fa-2x'></i></a>","<a><i class='fa fa-angle-right  fa-2x'></i></a>"]
+                        responsive:{
+                            0:{
+                                items:1
+                            },
+                            480:{
+                                items:1
+                            },
+                            667:{
+                                items:2
+                            },
+                            768:{
+                                items:2
+                            },
+                            1024:{
+                                items:3
+                            },
+                            1366:{
+                                items:3
+                            }
+                        },
+                        navText: ["<a><span><i class='fa fa-angle-left fa-2x'></i></span></a>","<a><span><i class='fa fa-angle-right  fa-2x'></i></span></a>"]
                     });
                 }
             });

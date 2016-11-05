@@ -31,21 +31,23 @@ function themetim_typography_color($color) {
     $color .= ".woocommerce ul.products li.product .price,a,.header-bottom .navbar-default .active a:hover,.header-bottom .navbar-default li> a,.woocommerce div.product .product_title,.woocommerce div.product p.price, .woocommerce div.product span.price,.woocommerce div.product form.cart .variations td.label,.navbar-default .navbar-nav>li>a,.footer-middle .footer-social a:hover{ color:" . esc_attr($link_color) . "} ";
 
     $link_hover_color = get_theme_mod( 'link_hover_color', '#fa8b6e' );
-    $color .= "a:hover,.header-bottom .navbar-default .active a,.header-bottom .navbar-default .active a:hover,.header-bottom .navbar-default li> a:hover ,.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,.footer-middle .footer-social a,.woocommerce-MyAccount-navigation .is-active a,.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,.latest-blog-share li a{ color:" . esc_attr($link_hover_color) . "} ";
+    $color .= "a:hover,.header-bottom .navbar-default .active a,.header-bottom .navbar-default .active a:hover,.header-bottom .navbar-default li> a:hover ,.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,.footer-middle .footer-social a,.woocommerce-MyAccount-navigation .is-active a,.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,.latest-blog-share li a,.footer-main li a:hover{ color:" . esc_attr($link_hover_color) . "} ";
 
     /*
      * Header Section
      */
     $header_bg_color = get_theme_mod( 'header_bg_color', 'transparent' );
     $header_text_color = get_theme_mod( 'header_text_color', '#30373b' );
-    $color .= ".header { background:" . esc_attr($header_bg_color) . "; color: ". esc_attr($header_text_color) .";} ";
+    $color .= ".header { background:" . esc_attr($header_bg_color) . "} ";
+    $color .= ".header-top a,.header { color: ". esc_attr($header_text_color) .";} ";
 
     /*
      * Footer Section
      */
     $footer_bg_color = get_theme_mod( 'footer_bg_color', '#fff' );
     $footer_text_color = get_theme_mod( 'footer_text_color', '#30373b' );
-    $color .= ".footer-main { background:" . esc_attr($footer_bg_color) . "; color: ". esc_attr($footer_text_color) .";} ";
+    $color .= ".footer-main { background:" . esc_attr($footer_bg_color) . "; } ";
+    $color .= ".footer-main ,.footer-main h4,.footer-main li a{  color: ". esc_attr($footer_text_color) .";} ";
 
     /*
      * Default Button
@@ -80,15 +82,15 @@ function themetim_typography_color($color) {
     /*
      * Success Button
      */
-    $btn_success_bg = get_theme_mod( 'btn_success_bg', '#fff' );
-    $btn_success_text = get_theme_mod( 'btn_success_text', '#000' );
-    $btn_success_border = get_theme_mod( 'btn_success_border', '#fff' );
+    $btn_success_bg = get_theme_mod( 'btn_success_bg', '#333' );
+    $btn_success_text = get_theme_mod( 'btn_success_text', '#fff' );
+    $btn_success_border = get_theme_mod( 'btn_success_border', '#333' );
 
     $color .= ".btn-success,.btn-success.disabled{ background-color:" . esc_attr($btn_success_bg) . "; color: " . esc_attr($btn_success_text) . ";border-color: " . esc_attr($btn_success_border) . "; } ";
 
-    $btn_success_bg_hover = get_theme_mod( 'btn_success_bg_hover', '#000' );
+    $btn_success_bg_hover = get_theme_mod( 'btn_success_bg_hover', '#fa8b6e' );
     $btn_success_text_hover = get_theme_mod( 'btn_success_text_hover', '#fff' );
-    $btn_success_border_hover = get_theme_mod( 'btn_success_border_hover', '#000' );
+    $btn_success_border_hover = get_theme_mod( 'btn_success_border_hover', '#fa8b6e' );
 
     $color .= ".btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open>.dropdown-toggle.btn-success{ background-color:" . esc_attr($btn_success_bg_hover) . "; color: " . esc_attr($btn_success_text_hover) . ";border-color: " . esc_attr($btn_success_border_hover) . "; } ";
 

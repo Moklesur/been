@@ -155,6 +155,7 @@ function themetim_scripts() {
 	wp_enqueue_script( 'themetim-mousewheel', get_template_directory_uri() . '/assets/js/jquery.mousewheel.min.js', array(), '3.1.13', true );
 	wp_enqueue_script( 'themetim-smoothscroll', get_template_directory_uri() . '/assets/js/jquery.simplr.smoothscroll.min.js', array(), '1.0.1', true );
 	wp_enqueue_script( 'themetim-animsition', get_template_directory_uri() . '/assets/js/animsition.min.js', array(), '4.0.2', true );
+	wp_enqueue_script( 'themetim-instafeed', get_template_directory_uri() . '/assets/js/instafeed.min.js', array(), '1.0.4', true );
 	wp_enqueue_script( 'themetim-script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -211,12 +212,11 @@ if ( class_exists( 'WooCommerce' ) ) {
  * ThemeTim Post Type
  */
 	require get_template_directory() . '/inc/woo-hook.php';
-
-	/**
-	 * ThemeTim widget
-	 */
-	require get_template_directory() . '/inc/widget/widget-setting.php';
 }
+/**
+ * ThemeTim widget
+ */
+require get_template_directory() . '/inc/widget/widget-setting.php';
 /**
  * ThemeTim Theme Functions
  */

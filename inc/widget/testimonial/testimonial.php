@@ -47,12 +47,12 @@ class TestimonialSlider_Widget extends WP_Widget {
                                        <img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="" class="img-responsive center-block">
                                    </div>
                                <?php } ?>
-                               <div class="testimonial-text margin-bottom-30">
-                                   <h3 class="margin-top-40 margin-bottom-20 text-capitalize"><?php the_title(); ?></h3>
+                               <div class="testimonial-text margin-top-30">
                                    <div class="testimonial-content center-block">
                                        <?php the_content(); ?>
                                    </div>
                                </div>
+                               <h3 class="margin-top-30 margin-bottom-30 margin-null text-capitalize"><?php the_title(); ?></h3>
                            </div>
                        <?php endwhile; ?>
                        <?php wp_reset_postdata(); ?>

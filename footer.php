@@ -10,42 +10,30 @@
  */
 
 ?>
-
-<footer class="footer-main padding-gap-1">
+<footer class="footer-main">
 	<!--------------- Footer Top ---------------->
-	<section class="footer-top padding-gap-1 padding-gap-2 text-center">
+	<section class="footer-top padding-gap-2">
 		<div class="container">
-			<div class="row">
-				<!--------------- Footer Social ---------------->
-				<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="row margin-top-40">
+				<?php
+				if(get_theme_mod('middle_footer_text_enable','1')) :
+					do_action('themetim_middle_footer_description');
+				endif;
+				if(get_theme_mod('middle_footer_nav_1_enable','1')) :
+					do_action('themetim_middle_footer_nav_1');
+				endif;
+				if(get_theme_mod('middle_footer_nav_2_enable','1')) :
+					do_action('themetim_middle_footer_nav_2');
+				endif;
+				?>
+				<div class="col-md-4 col-sm-6 col-xs-12">
 					<?php do_action('themetim_footer_newsletter'); ?>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--------------- Footer Middle ---------------->
-	<section class="footer-middle margin-top-40">
-        <div class="container">
-            <div class="row">
-				<?php
-				if(get_theme_mod('middle_footer_text_enable','1')) :
-					do_action('themetim_middle_footer_description');
-				 endif;
-				if(get_theme_mod('middle_footer_nav_1_enable','1')) :
-					do_action('themetim_middle_footer_nav_1');
-				 endif;
-				if(get_theme_mod('middle_footer_nav_2_enable','1')) :
-					do_action('themetim_middle_footer_nav_2');
-				 endif;
-				 ?>
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<?php do_action('themetim_footer_social'); ?>
-				</div>
-			</div>
-		</div>
-	</section>
 	<!--------------- Footer bottom ---------------->
-	<section class="footer-bottom text-center padding-bottom-10">
+	<section class="footer-bottom text-center padding-bottom-20 margin-top-30">
 		<div class="container">
 			<div class="row">
 				<?php

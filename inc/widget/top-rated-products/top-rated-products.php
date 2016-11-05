@@ -48,8 +48,27 @@ class TopRatedProducts_Widget extends WP_Widget {
                         loop:true,
                         margin:30,
                         responsiveClass:true,
-                        items:4,
-                        autoplay:true
+                        autoplay:true,
+                        responsive:{
+                            0:{
+                                items:1
+                            },
+                            480:{
+                                items:1
+                            },
+                            667:{
+                                items:2
+                            },
+                            768:{
+                                items:2
+                            },
+                            1024:{
+                                items:3
+                            },
+                            1366:{
+                                items:3
+                            }
+                        },
                     });
                 }
             });
