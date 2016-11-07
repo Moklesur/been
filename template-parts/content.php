@@ -9,7 +9,6 @@
 
 $margin[] = 'padding-gap-6 overflow';
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class($margin); ?>>
 	<header class="entry-header margin-bottom-20">
 		<?php
@@ -34,7 +33,7 @@ $margin[] = 'padding-gap-6 overflow';
 			if(is_single()) { ?>
 				<img src="<?php echo $post_thumbnail_id = get_the_post_thumbnail_url(); ?>"
 					 class="img-responsive margin-top-20 margin-bottom-20" alt=""/>
-				<?php } else { ?>
+			<?php } else { ?>
 				<a href="<?php the_permalink(); ?>"><img
 						src="<?php echo $post_thumbnail_id = get_the_post_thumbnail_url(); ?>"
 						class="img-responsive margin-top-20 margin-bottom-20" alt=""/></a>
@@ -60,14 +59,14 @@ $margin[] = 'padding-gap-6 overflow';
 
 	<footer class="entry-footer overflow">
 		<?php if(!is_single()) : ?>
-		<div class="pull-left">
-			<a href="<?php the_permalink(); ?>" class="btn btn-default margin-top-10">Continue Reading</a>
-		</div>
+			<div class="pull-left">
+				<a href="<?php the_permalink(); ?>" class="btn btn-default margin-top-10">Continue Reading</a>
+			</div>
 		<?php endif; ?>
 		<?php if (get_theme_mod('blog_social_sharing_enable', '1')) : ?>
-		<div class="pull-right margin-top-10">
-			<?php themetim_social_sharing(); ?>
-		</div>
+			<div class="pull-right margin-top-10">
+				<?php themetim_social_sharing(); ?>
+			</div>
 		<?php endif; ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

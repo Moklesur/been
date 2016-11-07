@@ -71,13 +71,13 @@ function themetim_typography_color($color) {
     $btn_primary_text = get_theme_mod( 'btn_primary_text', '#fff' );
     $btn_primary_border = get_theme_mod( 'btn_primary_border', '#30373b' );
 
-    $color .= ".btn-primary, .btn-primary.disabled{ background-color:" . esc_attr($btn_primary_bg) . "; color: " . esc_attr($btn_primary_text) . ";border-color: " . esc_attr($btn_primary_border) . "; } ";
+    $color .= ".btn-primary, .btn-primary.disabled,.woocommerce ul.products li.product .yith-wcqv-button{ background-color:" . esc_attr($btn_primary_bg) . "; color: " . esc_attr($btn_primary_text) . ";border-color: " . esc_attr($btn_primary_border) . "; } ";
 
     $btn_primary_bg_hover = get_theme_mod( 'btn_primary_bg_hover', '#fa8b6e' );
     $btn_primary_text_hover = get_theme_mod( 'btn_primary_text_hover', '#fff' );
     $btn_primary_border_hover = get_theme_mod( 'btn_primary_border_hover', '#fa8b6e' );
 
-    $color .= ".btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary{ background-color:" . esc_attr($btn_primary_bg_hover) . "; color: " . esc_attr($btn_primary_text_hover) . ";border-color: " . esc_attr($btn_primary_border_hover) . "; } ";
+    $color .= ".btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary,.woocommerce ul.products li.product .yith-wcqv-button:hover{ background-color:" . esc_attr($btn_primary_bg_hover) . "; color: " . esc_attr($btn_primary_text_hover) . ";border-color: " . esc_attr($btn_primary_border_hover) . "; } ";
 
     /*
      * Success Button

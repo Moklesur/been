@@ -24,7 +24,6 @@ add_filter('woocommerce_after_shop_loop_item_title', 'themetim_product_hover');
 function themetim_product_hover(){ ?>
     <div class="product-hover text-center">
         <?php woocommerce_template_loop_rating(); ?>
-        <a href="<?php the_permalink(); ?>" class="btn btn-default"><span>Item Details</span></a>
     </div>
 <?php }
 /**
@@ -83,7 +82,7 @@ function custom_add_product_description ($category) {
 add_filter('loop_shop_columns', 'loop_columns');
 if (!function_exists('loop_columns')) {
     function loop_columns() {
-        return 4; // 3 products per row
+        return 3; // 3 products per row
     }
 }
 

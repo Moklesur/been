@@ -712,6 +712,16 @@ function themetim_customize_register( $wp_customize ) {
 			'settings' => 'themetim_options[divider]'
 		) )
 	);
+
+	$wp_customize->add_setting( 'blog_posts_limit', array(
+		'default'           => '4',
+	) );
+	$wp_customize->add_control( 'blog_posts_limit', array(
+		'type'        => 'number',
+		'section'     => 'blog_settings',
+		'settings' => 'blog_posts_limit',
+		'label'       => __('Blog Posts Limit', 'text_domain'),
+	) );
 	$wp_customize->add_setting( 'blog_sidebar_enable', array(
 		'default'           => '1',
 	) );

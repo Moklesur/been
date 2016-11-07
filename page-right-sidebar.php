@@ -14,7 +14,6 @@ get_header(); ?>
         <section>
             <div class="container">
                 <div class="row">
-                    <?php get_sidebar(); ?>
                     <div class="col-md-9 col-sm-8 col-xs-12 padding-gap-1 padding-gap-4">
                         <?php
                         while ( have_posts() ) : the_post();
@@ -29,6 +28,7 @@ get_header(); ?>
                         endwhile; // End of the loop.
                         ?>
                     </div>
+                    <?php get_sidebar(); ?>
                 </div>
             </div>
         </section>

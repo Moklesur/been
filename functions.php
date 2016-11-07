@@ -237,6 +237,11 @@ add_filter( 'excerpt_length', 'themetim_excerpt_length', 999 );
 add_filter( 'max_srcset_image_width', create_function( '', 'return 1;' ) );
 
 /**
+ * ThemeTim Blog limit
+ */
+update_option( 'posts_per_page', get_theme_mod('blog_posts_limit','4') );
+
+/**
  *TGM Plugin activation.
  */
 require_once dirname( __FILE__ ) . '/inc/class-tgm-plugin-activation.php';

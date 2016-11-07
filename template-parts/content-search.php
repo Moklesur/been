@@ -11,7 +11,7 @@ $margin[] = 'padding-gap-6 overflow';
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($margin); ?>>
 	<header class="entry-header  margin-bottom-20">
-		<?php the_title( sprintf( '<h3 class="entry-title page-header"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+		<?php the_title( sprintf( '<h3 class="entry-title text-capitalize"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta margin-top-10">
