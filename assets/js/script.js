@@ -140,8 +140,8 @@ jQuery(function(){
      *******************************************************************************/
     if(jQuery('.animsition').length){
         jQuery(".animsition").animsition({
-            inClass: 'fade-in',
-            outClass: 'fade-out',
+            inClass: 'fade-in-up-sm',
+            outClass: 'fade-out-up-sm',
             inDuration: 1500,
             outDuration: 800,
             linkElement: '.navbar-collapse a',

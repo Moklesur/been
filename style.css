@@ -6,7 +6,7 @@ Author URI: http://themetim.com/
 Description: Been is responsive woocommerce integrated theme which is designed subtle and prevailing. Ideal for featuring Been products and techniques. It has been optimized for best practice SEO with visual page builder integration.
 Version: 1.0
 Text Domain: themetim.com
-Tags: fully customizable, visual page builder, mobile responsive, responsive, grid, bootstrap, custom menu, full width, custom sidebar, ecommerce, blog, modern design, featured image, custom background, news and promotions, social,woocommerce
+Tags: fully customizable, visual page builder, mobile responsive, responsive, grid, bootstrap, custom menu, full width, custom sidebar, ecommerce, blog, modern design, featured image, woman fashion, custom background, news and promotions, social,woocommerce
 */
 
 /********************************************************
@@ -278,12 +278,12 @@ p,.textwidget,.woocommerce-Address address {
 }
 .main-slider .slider-inner{
 	position: absolute;
-	top: 40%;
+	top: 25%;
 	width: 100%;
 }
-.slider-wrap{
-	max-width: 950px;
-	margin:0 auto;
+.slider-wrap {
+	max-width: 590px;
+	margin: 0 auto 0 0;
 }
 .camera_wrap.main-slider .btn{
 	padding: 10px 20px;
@@ -951,6 +951,7 @@ p,.textwidget,.woocommerce-Address address {
 	line-height: inherit;
 	position: relative;
 	opacity: 0;
+	max-width: 47px;
 }
 .cart-wishlist-compare .button,.woocommerce .product-fix .compare,.woocommerce .product-fix .yith-wcqv-button,.product-fix .product-hover {
 	-webkit-transition: all 1s ease;
@@ -975,9 +976,6 @@ p,.textwidget,.woocommerce-Address address {
 }
 .woocommerce .product-fix a.yith-wcqv-button:before{
 	content: "\f002";
-}
-.woocommerce ul.products li.product .button.added{
-
 }
 .woocommerce .cart-wishlist-compare a.added.add_to_cart_button:before,.woocommerce .cart-wishlist-compare a.loading.add_to_cart_button:before{
 	content: "\f00c";

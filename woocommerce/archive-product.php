@@ -58,7 +58,7 @@ get_header( 'shop' ); ?>
 				 *
 				 * @hooked woocommerce_get_sidebar - 10
 				 */
-				if (get_theme_mod('shop_sidebar_enable') ) :
+				if (get_theme_mod('shop_sidebar_enable','1') ) :
 					?><aside id="secondary" class="widget-area col-md-3 col-sm-12 col-xs-12 padding-gap-2" role="complementary"><?php
 					dynamic_sidebar( 'shop-product' );
 					?></aside><?php

@@ -1497,6 +1497,7 @@ function themetim_customize_register( $wp_customize ) {
 				'Exo' => 'Exo',
 				'Exo+2' => 'Exo 2',
 				'Play' => 'Play',
+				'' =>''
 			),
 		)
 	);

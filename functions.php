@@ -84,18 +84,6 @@ endif;
 add_action( 'after_setup_theme', 'themetim_setup' );
 
 /**
- * @param $classes
- * @return array
- * Add Body Class for Animation
- */
-function themetim_body_class($classes) {
-	$classes[] = 'animsition';
-	return $classes;
-}
-
-add_filter('body_class', 'themetim_body_class');
-
-/**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar

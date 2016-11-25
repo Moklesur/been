@@ -39,6 +39,11 @@
         ## Max Width 767px
 ********************************************************/
 @media only screen and (max-width:767px) {
+    .header-bottom .search-cart li .search-border {
+        border-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
         margin: 0 0 30px 0;
     }
@@ -112,7 +117,7 @@
         width: 100%;
     }
     .logo{
-        margin-top: 15px;
+        margin-top: 10px;
     }
     .main-slider .slider-inner {
         top: 20%;

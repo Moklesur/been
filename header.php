@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div class="themetim-loading">
+<div class="themetim-loading animsition">
 	<header class="header">
 		<!--------------- Header Top ---------------->
 		<section class="header-top padding-top-10 padding-bottom-10 text-center-xs">
